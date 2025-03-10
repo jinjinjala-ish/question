@@ -23,7 +23,7 @@ public class one9one9 {
 
         int sum = 0;
         for (int i = 0; i < 26; i++) {
-            sum += Math.abs(count1[i] - count2[i]) //Math.abs()는 절댓값을 리턴하는 함수임
+            sum += Math.abs(count1[i] - count2[i]); //Math.abs()는 절댓값을 리턴하는 함수임
             /*if (count1[i] > count2[i]) { //count1의 a, c에 해당하는 값이 더 클 경우
                 sum += count1[i] - count2[i]; //2-0 = 2, 2-0 = 2
             } else if (count2[i] > count1[i]) {//count2의 x, y에 해당하는 값이 더 클 경우
