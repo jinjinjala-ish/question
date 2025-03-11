@@ -1,29 +1,34 @@
 package algorithm.String;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class ex2 {
-    public static void main(String[] args) {
+
+    public static void main(String[] args){
+
         Scanner scanner = new Scanner(System.in);
 
         String s = scanner.next();
-
-        int[] sArray = new int[100];
-
-        for (int i = 0; i < s.length(); i++) {
-            sArray[i] = s.charAt(i);
-        }
-
-        for (int i = 0; i < sArray.length; i++) {
-            if (sArray[i] - 'a' < 0) {
-                sArray[i] += 'a';
-            } else if (sArray[i] - 'a' > 0){
-                sArray[i] -= 'a';
+        String answer = "";
+                                               //32
+     /*   for(char x : s.toCharArray()){
+            if(Character.isLowerCase(x)){
+                answer += Character.toUpperCase(x);
+            } else {
+                answer += Character.toLowerCase(x);
             }
-            s = sArray.toString();
+        }*/
+
+        for (char x : s.toCharArray()) {
+            if (x > 65 && x < 97) {
+                answer += Character.toLowerCase(x);
+            }
+             else {
+                answer += Character.toUpperCase(x);
+            }
         }
 
-        System.out.println(s);
+        System.out.println(answer);
     }
+
 }
