@@ -25,8 +25,8 @@ public class Ex4 {
             }
         }
 
-        System.out.println(strings);
-
+  /*      System.out.println(strings);
+*/
 
 
     }
